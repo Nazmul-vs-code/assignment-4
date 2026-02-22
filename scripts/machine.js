@@ -1,7 +1,6 @@
 let interviewList = [];
 let rejectedList = [];
 
-// 1. Tab Navigation (Traditional Style)
 function showOnly(id) {
     let sections = ["Interview_history", "Rejected_history", "All_history"];
 
@@ -57,7 +56,7 @@ function addToInterview(jobId, btnElement) {
         contentArea.appendChild(newCard);
         interviewList.push(jobId);
 
-        btnElement.innerText = "ADDED TO INTERVIEW";
+        btnElement.innerText = "INTERVIEW";
         updateCounters();
     }
 }
@@ -145,7 +144,6 @@ function updateCounters() {
         counters[2].innerText = rejectedList.length;
     }
 
-    // Tab Sub-heading ("X of Y")
     const interviewTabVisible = document.getElementById("Interview_history").style.display === 'block';
     const rejectedTabVisible = document.getElementById("Rejected_history").style.display === 'block';
 
