@@ -174,6 +174,12 @@ function jobDelete(id) {
     const card = document.getElementById(id);
     if (card) card.remove();
     updateCounters();
+
+    // Check if All_history is empty
+    const allHistory = document.getElementById('All_history');
+    if (allHistory.querySelectorAll('.job-card').length === 0) {
+        allHistory.innerHTML = emptyHtml; // Show your empty state
+    }
 }
 
 // 7. Counter Logic
