@@ -1,0 +1,34 @@
+
+
+.counter {
+    font-weight: bold;
+}
+
+.header-card {
+    /* border: solid; */
+    padding: 15px 10px;
+}
+p {
+    color: #64748B;
+}
+
+.job-card {
+    padding: 20px 30px;
+    margin: 25px;
+    background: #64748b2e;
+    border-radius: 8px;
+}
+
+.confirmation-flag {
+    background: #EEF4FF;
+    padding: 15px 15px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* This is for vibing staying on a section */
+.active-btn {
+    background-color: #1d4ed8 !important; 
+    color: white !important;
+    border-color: #1d4ed8 !important;
+}
